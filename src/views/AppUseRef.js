@@ -1,5 +1,7 @@
 import React, {useState, useRef} from 'react'
 import '../App.css'
+import SelectTextArea from '../components/fowradRef_compo/SelectTextArea';
+import SendFile from '../components/fowradRef_compo/SendFile';
 
 const AppUseRef = () => {
   const textAreaRef = useRef(null);
@@ -19,18 +21,8 @@ const AppUseRef = () => {
     <section className='app-section'>
         <div className="app-container">
             <h2>ไม่ใช่แฟนทำแทนก็ได้</h2>
-            <p>
-              <textarea ref={textAreaRef}/>
-            </p>
-            <p>
-              <button onClick={onAllTextChoose}>Choose all text</button>
-            </p>
-            <p>
-                <input type="file" ref={fileRef}/>
-            </p>
-            <p>
-                <button onClick={onUploadClick}>Upload file</button>
-            </p>
+            <SelectTextArea onAllTextChoose={onAllTextChoose} ref={textAreaRef}/>
+            <SendFile onUploadClick={onUploadClick} ref={fileRef}/>
         </div>
     </section>
   )
