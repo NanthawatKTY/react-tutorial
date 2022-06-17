@@ -2,26 +2,26 @@ import { useContext } from "react";
 import { AuthContext } from "../../views/AppUseContext";
 
 
-const fakeUser = { username: "admin", password: "admin" };
+const fakeUser = { username: "admin", password: "admin123" };
 
 function LoginForm() {
 
-    const {auth, setAuth} = useContext(AuthContext);
-
+    const {authState, authDispatch} = useContext(AuthContext);
+    
     function loginSubmit(event) {
         event.preventDefault();
-        setAuth(fakeUser);
+        authDispatch({ type: 'login', payload: fakeUser }); //Send action = type: login to reducer in AppUseContext
     }
 
     function logoutSubmit() {
-        setAuth(null)
+        authDispatch({ type: "logout" }); //Send action = type: logout to reducer in AppUseContext
     }
 
-    if (!!auth) {
+    if (!!authState) {
         return (
             <div>
-                <p>Auth username = {auth.username}</p>
-                <p>Auth password = {auth.password}</p>
+                <p>Auth username = {authState.username}</p>
+                <p>Auth password = {authState.password}</p>
                 <p><button onClick={logoutSubmit}>Log out</button></p>
             </div>
         )
