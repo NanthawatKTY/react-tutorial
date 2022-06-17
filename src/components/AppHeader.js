@@ -22,18 +22,13 @@ const AppHeader = () => {
             <Nav className="mx-auto align-items-center">
               <Nav.Link className={getNavClass} href="state">State</Nav.Link>
               <Nav.Link className={getNavClass} href="useFX">useEffect</Nav.Link>
+              <Nav.Link className={getNavClass} href="useContext">useContext</Nav.Link>
               <Search />
               <Navbar.Brand className="mx-auto" href=""><i className="fa-solid fa-bag-shopping"></i></Navbar.Brand> 
             </Nav>
           </Navbar.Collapse>
-
       </Container>
     </Navbar>
-      <Nav className="justify-content-center sec-nav-item">
-        <Nav.Item className="mt-3 mb-2 text-center">
-          <p>นำสมาร์ทโฟนของคุณมาแลก เพื่อรับเครดิตมูลค่าสูงสุด ฿17,100 สำหรับใช้ซื้อเครื่องใหม่* </p>
-        </Nav.Item>
-      </Nav>
   </div>  
   )
 }
