@@ -23,6 +23,7 @@ const AppHeader = () => {
               <Nav.Link className={getNavClass} href="state">State</Nav.Link>
               <Nav.Link className={getNavClass} href="useFX">useEffect</Nav.Link>
               <Nav.Link className={getNavClass} href="useContext">useContext</Nav.Link>
+              <Nav.Link className={getNavClass} href="useRef">useRef</Nav.Link>
               <Search />
               <Navbar.Brand className="mx-auto" href=""><i className="fa-solid fa-bag-shopping"></i></Navbar.Brand> 
             </Nav>
