@@ -8,7 +8,7 @@ function AppLayoutComponent() {
         <section className='app-section'>
             <div className="app-container">
                 <h2>Farm Dashboard</h2>
-                <Notification title="Hi" description="We are here for peace."/>
+                <Notification title="Hi" description="We are here for peace." level="warning"/>
                 <Grid columns={3}>
                     <Box title="Order per day">
                         <ul>
