@@ -24,7 +24,8 @@ const AppHeader = () => {
               <Nav.Link className={getNavClass} href="useFX">useEffect</Nav.Link>
               <Nav.Link className={getNavClass} href="useContext">useContext</Nav.Link>
               <Nav.Link className={getNavClass} href="useRef">useRef</Nav.Link>
-              <Nav.Link className={getNavClass} href="layoutComponent">Layout Component</Nav.Link>
+              <Nav.Link className={getNavClass} href="layoutComponent">Layout_Component</Nav.Link>
+              <Nav.Link className={getNavClass} href="nestedRoute">Nested_Route</Nav.Link>
               <Search />
               <Navbar.Brand className="mx-auto" href=""><i className="fa-solid fa-bag-shopping"></i></Navbar.Brand> 
             </Nav>
