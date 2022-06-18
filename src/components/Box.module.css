@@ -3,3 +3,8 @@
     border-radius: 12px;
     padding: 8px 16px;
 }
+
+.title{
+    border-bottom: 4px solid rgb(8, 158, 207);
+    padding-bottom: 8px;
+}
