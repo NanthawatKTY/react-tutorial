@@ -5,6 +5,7 @@ import AppState from './views/AppState';
 import AppUseEffect from './views/AppUseEffect';
 import AppUseContext from './views/AppUseContext';
 import AppUseRef from './views/AppUseRef';
+import AppLayoutComponent from './views/AppLayoutComponent';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/useFX" element={<AppUseEffect />} />
         <Route path="/useContext" element={<AppUseContext />} />
         <Route path="/useRef" element={<AppUseRef />} />
+        <Route path="/layoutComponent" element={<AppLayoutComponent />} />
       </Routes>
     </div>
   );
