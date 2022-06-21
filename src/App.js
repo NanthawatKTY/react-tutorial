@@ -10,6 +10,7 @@ import AppUseRef from './views/AppUseRef';
 import AppLayoutComponent from './views/AppLayoutComponent';
 import NestedRoute from './views/NestedRoute';
 import PagePost from './views/PagePost';
+import BmiPage from './views/Bmi';
 import Page404 from './views/Page404';
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
         <Route path="/useContext" element={<AppUseContext />} />
         <Route path="/useRef" element={<AppUseRef />} />
         <Route path="/layoutComponent" element={<AppLayoutComponent />} />
-        <Route path="/nestedRoute/*" element={<NestedRoute />} />
-        <Route path="post/:postId" element={<PagePost />}/>
+        <Route path="nestedRoute/*" element={<NestedRoute />} />
+        <Route path="/post/:postId" element={<PagePost />}/>
+        <Route path="/Bmi" element={<BmiPage />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </div>
